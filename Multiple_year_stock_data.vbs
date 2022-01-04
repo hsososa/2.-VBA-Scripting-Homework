@@ -53,12 +53,12 @@ Sub multiple_year_stock_data()
                     
                     'Add one to the summary table row
                     Summary_Table_Row = Summary_Table_Row + 1
-                    'Reset the Stock Volume
-                    stock_volume = 0
+                     
                     
-                'Re-initialize Yearly Change & Closing Price for new ticker
+                'Re-initialize Yearly Change, Closing Price, Stock Volume for new ticker
                     yearly_change = 0
                     closing_price = 0
+                    stock_volume = 0
                 'Set Opening price for new ticker
                     opening_price = ws.Cells(i + 1, 3).Value
 
